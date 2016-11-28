@@ -8,7 +8,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/brettalcox/logU-swift.git</url>
+        <url>https://github.com/austinzheng/swift-2048.git</url>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
@@ -38,7 +38,7 @@
       <xcodeProjectPath></xcodeProjectPath>
       <xcodeProjectFile></xcodeProjectFile>
       <xcodebuildArguments>test -destination &apos;id=A6B430F1-1ECF-4FF1-B505-EEFF64A5E3A7&apos;</xcodebuildArguments>
-      <xcodeSchema>Charts-iOS</xcodeSchema>
+      <xcodeSchema>swift-2048</xcodeSchema>
       <xcodeWorkspaceFile></xcodeWorkspaceFile>
       <embeddedProfileFile></embeddedProfileFile>
       <cfBundleVersionValue></cfBundleVersionValue>
