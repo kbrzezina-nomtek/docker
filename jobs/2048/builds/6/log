@@ -1,0 +1,47 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building remotely on [8mha:AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQifd/EZP9gAD7LxujEAAAA[0mMacOS in workspace /Users/kbrzezina/jenkins_node/workspace/2048
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/austinzheng/swift-2048.git # timeout=10
+Fetching upstream changes from https://github.com/austinzheng/swift-2048.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/austinzheng/swift-2048.git +refs/heads/*:refs/remotes/origin/*
+FATAL: java.io.IOException: Unexpected termination of the channel
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mhudson.remoting.RequestAbortedException: java.io.IOException: Unexpected termination of the channel
+	at hudson.remoting.Request.abort(Request.java:303)
+	at hudson.remoting.Channel.terminate(Channel.java:863)
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:92)
+	at ......remote call to MacOS(Native Method)
+	at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1433)
+	at hudson.remoting.Request.call(Request.java:172)
+	at hudson.remoting.Channel.call(Channel.java:796)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.execute(RemoteGitImpl.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.invoke(RemoteGitImpl.java:131)
+	at com.sun.proxy.$Proxy58.execute(Unknown Source)
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:801)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1063)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1094)
+	at hudson.scm.SCM.checkout(SCM.java:495)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1278)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:604)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:529)
+	at hudson.model.Run.execute(Run.java:1720)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:404)
+Caused by: java.io.IOException: Unexpected termination of the channel
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:73)
+Caused by: java.io.EOFException
+	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2353)
+	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:2822)
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:804)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:301)
+	at hudson.remoting.ObjectInputStreamEx.<init>(ObjectInputStreamEx.java:48)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.read(AbstractSynchronousByteArrayCommandTransport.java:34)
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:59)
+Finished: FAILURE

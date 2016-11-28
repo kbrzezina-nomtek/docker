@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/brettalcox/logU-swift.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <au.com.rayh.XCodeBuilder plugin="xcode-plugin@1.4.11">
+      <cleanBeforeBuild>true</cleanBeforeBuild>
+      <cleanTestReports>true</cleanTestReports>
+      <configuration>Debug</configuration>
+      <target></target>
+      <sdk></sdk>
+      <symRoot></symRoot>
+      <configurationBuildDir></configurationBuildDir>
+      <xcodeProjectPath></xcodeProjectPath>
+      <xcodeProjectFile></xcodeProjectFile>
+      <xcodebuildArguments>test -destination &apos;id=A6B430F1-1ECF-4FF1-B505-EEFF64A5E3A7&apos;</xcodebuildArguments>
+      <xcodeSchema>Charts-iOS</xcodeSchema>
+      <xcodeWorkspaceFile></xcodeWorkspaceFile>
+      <embeddedProfileFile></embeddedProfileFile>
+      <cfBundleVersionValue></cfBundleVersionValue>
+      <cfBundleShortVersionStringValue></cfBundleShortVersionStringValue>
+      <buildIpa>false</buildIpa>
+      <generateArchive>false</generateArchive>
+      <unlockKeychain>false</unlockKeychain>
+      <keychainName>none (specify one below)</keychainName>
+      <keychainPath>kbrzezina</keychainPath>
+      <keychainPwd>alamakota</keychainPwd>
+      <codeSigningIdentity></codeSigningIdentity>
+      <allowFailingBuildResults>false</allowFailingBuildResults>
+      <ipaName></ipaName>
+      <ipaOutputDirectory></ipaOutputDirectory>
+      <provideApplicationVersion>false</provideApplicationVersion>
+      <changeBundleID>false</changeBundleID>
+      <bundleID></bundleID>
+      <bundleIDInfoPlistPath></bundleIDInfoPlistPath>
+      <interpretTargetAsRegEx>false</interpretTargetAsRegEx>
+      <ipaManifestPlistUrl></ipaManifestPlistUrl>
+      <signIpaOnXcrun>true</signIpaOnXcrun>
+    </au.com.rayh.XCodeBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

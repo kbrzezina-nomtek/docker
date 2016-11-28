@@ -1,0 +1,87 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building remotely on [8mha:AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQifd/EZP9gAD7LxujEAAAA[0mMacOS in workspace /Users/kbrzezina/jenkins_node/workspace/2048
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/austinzheng/swift-2048.git # timeout=10
+Fetching upstream changes from https://github.com/austinzheng/swift-2048.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/austinzheng/swift-2048.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c71dc7907044ca7604f41d96969875448b31f2ab (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c71dc7907044ca7604f41d96969875448b31f2ab
+ > git rev-list c71dc7907044ca7604f41d96969875448b31f2ab # timeout=10
+Working directory is /Users/kbrzezina/jenkins_node/workspace/2048.
+[2048] $ /usr/bin/xcodebuild -version
+Xcode 7.3.1
+Build version 7D1014
+Fetching marketing version number (CFBundleShortVersionString) from project.
+[2048] $ /usr/bin/agvtool mvers -terse1
+Found marketing version (CFBundleShortVersionString): 1.0.
+Marketing version (CFBundleShortVersionString) found in project configuration: 1.0.
+Fetching technical version number (CFBundleVersion) from project.
+[2048] $ /usr/bin/agvtool vers -terse
+No marketing version found (CFBundleVersion)
+Technical version (CFBundleVersion) found in project configuration: .
+Marketing version (CFBundleShortVersionString) used by Jenkins to produce the IPA: 1.0
+Technical version (CFBundleVersion) used by Jenkins to produce the IPA: 
+===========================================================
+== Available provisioning profiles
+[2048] $ /usr/bin/security find-identity -p codesigning -v
+  1) 8A413CA3AFEFC7399319EF5AB12E4AFBAEA025A7 "iPhone Developer: krzysztof.brzezina@gmail.com (6WNV66F8FW)"
+     1 valid identities found
+== Available SDKs
+[2048] $ /usr/bin/xcodebuild -showsdks
+OS X SDKs:
+	OS X 10.11                    	-sdk macosx10.11
+
+iOS SDKs:
+	iOS 9.3                       	-sdk iphoneos9.3
+
+iOS Simulator SDKs:
+	Simulator - iOS 9.3           	-sdk iphonesimulator9.3
+
+tvOS SDKs:
+	tvOS 9.2                      	-sdk appletvos9.2
+
+tvOS Simulator SDKs:
+	Simulator - tvOS 9.2          	-sdk appletvsimulator9.2
+
+watchOS SDKs:
+	watchOS 2.2                   	-sdk watchos2.2
+
+watchOS Simulator SDKs:
+	Simulator - watchOS 2.2       	-sdk watchsimulator2.2
+
+== Available schemes
+[2048] $ /usr/bin/xcodebuild -list
+Information about project "swift-2048":
+    Targets:
+        swift-2048
+        swift-2048Tests
+
+    Build Configurations:
+        Debug
+        Release
+
+    If no build configuration is specified and -scheme is not passed then "Release" is used.
+
+    This project contains no schemes.
+
+===========================================================
+Going to invoke xcodebuild:target: swift-2048, sdk: DEFAULT, project: DEFAULT, configuration: Release, clean: NO, archive:NO, symRoot: DEFAULT, configurationBuildDir: DEFAULT, codeSignIdentity: DEFAULT
+[2048] $ /usr/bin/xcodebuild -target swift-2048 -configuration Release build -destination id=A6B430F1-1ECF-4FF1-B505-EEFF64A5E3A7
+=== BUILD TARGET swift-2048 OF PROJECT swift-2048 WITH CONFIGURATION Release ===
+
+Check dependencies
+Code Sign error: No provisioning profiles found: No non–expired provisioning profiles were found.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Check dependencies
+(1 failure)
+Build step 'Xcode' marked build as failure
+Finished: FAILURE
