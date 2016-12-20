@@ -3,16 +3,30 @@
   <name>MacOS</name>
   <description></description>
   <remoteFS>/Users/kbrzezina/jenkins_node</remoteFS>
-  <numExecutors>2</numExecutors>
+  <numExecutors>1</numExecutors>
   <mode>NORMAL</mode>
   <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
-  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.11">
-    <host>192.168.2.51</host>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.12">
+    <host>192.168.2.53</host>
     <port>22</port>
-    <credentialsId>38726a1d-526f-4516-8bc4-d7453c698330</credentialsId>
+    <credentialsId>67ad8946-d60f-4467-9541-c9b857448ba6</credentialsId>
     <maxNumRetries>0</maxNumRetries>
     <retryWaitTime>0</retryWaitTime>
   </launcher>
   <label></label>
-  <nodeProperties/>
+  <nodeProperties>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>1</int>
+          <string>PATH</string>
+          <string>$PATH:/usr/local/bin</string>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+  </nodeProperties>
 </slave>

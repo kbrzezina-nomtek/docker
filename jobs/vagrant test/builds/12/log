@@ -1,0 +1,33 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building remotely on [8mha:AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQifd/EZP9gAD7LxujEAAAA[0mMacOS in workspace /Users/kbrzezina/jenkins_node/workspace/vagrant test
+[vagrant test] $ /bin/sh -xe /var/folders/q0/jzkd399x1vg_d77dvjy8w4f00000gn/T/hudson5511049691046576300.sh
++ pwd
+/Users/kbrzezina/jenkins_node/workspace/vagrant test
++ whoami
+kbrzezina
++ whereis vagrant
++ vagrant -v
+Vagrant 1.9.0
++ env
++ grep PATH
+PATH=/Users/kbrzezina/.sdkman/candidates/groovy/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kbrzezina/.rvm/bin:/usr/local/bin:/usr/local/bin
++ cd /Users/kbrzezina/vagrant
++ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Available bridged network interfaces:
+1) en0: Wi-Fi (AirPort)
+2) en1: Ethernet Adaptor (en1)
+3) en2: Ethernet Adaptor (en2)
+4) p2p0
+5) awdl0
+6) bridge0
+==> default: When choosing an interface, it is usually the one that is
+==> default: being used to connect to the internet.
+Vagrant is attempting to interface with the UI in a way that requires
+a TTY. Most actions in Vagrant that require a TTY have configuration
+switches to disable this requirement. Please do that or run Vagrant
+with TTY.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

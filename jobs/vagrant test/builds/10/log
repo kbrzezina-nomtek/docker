@@ -1,0 +1,14 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building remotely on [8mha:AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQifd/EZP9gAD7LxujEAAAA[0mMacOS in workspace /Users/kbrzezina/jenkins_node/workspace/vagrant test
+[vagrant test] $ /bin/sh -xe /var/folders/q0/jzkd399x1vg_d77dvjy8w4f00000gn/T/hudson5071894954190388584.sh
++ pwd
+/Users/kbrzezina/jenkins_node/workspace/vagrant test
++ whoami
+kbrzezina
++ whereis vagrant
++ /usr/local/bin/vagrant -v
+Vagrant 1.9.0
++ env
++ grep PATH
+PATH=/Users/kbrzezina/.sdkman/candidates/groovy/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kbrzezina/.rvm/bin:/usr/local/bin:/usr/local/bin
+Finished: SUCCESS

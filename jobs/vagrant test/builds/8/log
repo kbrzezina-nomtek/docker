@@ -1,0 +1,50 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building remotely on [8mha:AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQifd/EZP9gAD7LxujEAAAA[0mMacOS in workspace /Users/kbrzezina/jenkins_node/workspace/vagrant test
+[vagrant test] $ /bin/sh -xe /var/folders/q0/jzkd399x1vg_d77dvjy8w4f00000gn/T/hudson607516393098194623.sh
++ pwd
+/Users/kbrzezina/jenkins_node/workspace/vagrant test
++ whoami
+kbrzezina
++ whereis vagrant
++ /usr/local/bin/vagrant -v
+Vagrant 1.9.0
++ env
+SDKMAN_SERVICE=http://api.sdkman.io
+HUDSON_SERVER_COOKIE=085bab195092f383
+SHELL=/bin/bash
+TMPDIR=/var/folders/q0/jzkd399x1vg_d77dvjy8w4f00000gn/T/
+SSH_CLIENT=192.168.2.53 54424 22
+BUILD_TAG=jenkins-vagrant test-8
+SDKMAN_PLATFORM=Darwin
+WORKSPACE=/Users/kbrzezina/jenkins_node/workspace/vagrant test
+JAVA_MAIN_CLASS_55745=hudson.remoting.Launcher
+USER=kbrzezina
+__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+SDKMAN_BROADCAST_SERVICE=http://cast.sdkman.io
+JENKINS_HOME=/var/jenkins_home
+MAIL=/var/mail/kbrzezina
+PATH=/Users/kbrzezina/.sdkman/candidates/groovy/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kbrzezina/.rvm/bin
+PWD=/Users/kbrzezina/jenkins_node/workspace/vagrant test
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home
+JOB_NAME=vagrant test
+SDKMAN_VERSION=3.3.1
+BUILD_DISPLAY_NAME=#8
+BUILD_ID=8
+JOB_BASE_NAME=vagrant test
+SHLVL=2
+HOME=/Users/kbrzezina
+EXECUTOR_NUMBER=1
+JENKINS_SERVER_COOKIE=085bab195092f383
+NODE_LABELS=MacOS
+LOGNAME=kbrzezina
+SDKMAN_DIR=/Users/kbrzezina/.sdkman
+GROOVY_HOME=/Users/kbrzezina/.sdkman/candidates/groovy/current
+SSH_CONNECTION=192.168.2.53 54424 192.168.2.53 22
+HUDSON_HOME=/var/jenkins_home
+NODE_NAME=MacOS
+BUILD_NUMBER=8
+SDKMAN_BROKER_SERVICE=http://broker.sdkman.io
+SDKMAN_CANDIDATES_DIR=/Users/kbrzezina/.sdkman/candidates
+HUDSON_COOKIE=c91c719c-8af7-489e-965b-35446689a483
+_=/usr/bin/env
+Finished: SUCCESS
